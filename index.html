@@ -83,21 +83,21 @@
         <strong>Developer:</strong> XUETING ZHANG<br>
         <strong>Contact:</strong> donelist.services@outlook.com<br>
         <strong>Effective Date:</strong> October 17, 2025<br>
-        <strong>Last Updated:</strong> October 17, 2025</p>
+        <strong>Last Updated:</strong> November 21, 2025</p>
 
         <h2>1. Overview</h2>
         <p>Donelist-Build Your Motivation ("the App") is a productivity tool that helps you track daily tasks and build motivation. We are committed to protecting your privacy. This policy explains what data we collect and how we use it.</p>
 
         <h2>2. Data We Collect</h2>
 
-        <h3>2.1 Task Data (Stored Locally)</h3>
+        <h3>2.1 Task Data (Stored Locally & iCloud Sync)</h3>
         <ul>
             <li>Task titles and content you create</li>
             <li>Task completion status</li>
             <li>Task creation and completion dates</li>
             <li>Repeating task settings</li>
         </ul>
-        <p><strong>Storage:</strong> All task data is stored locally on your device using Core Data. We do not have access to your task content.</p>
+        <p><strong>Storage:</strong> All task data is stored locally on your device using Core Data. When you are signed in to iCloud, your task data is automatically synced to your personal iCloud account for backup and cross-device access. We do not have access to your task content - all data remains in your personal iCloud account.</p>
 
         <h3>2.2 App Settings</h3>
         <ul>
@@ -113,7 +113,7 @@
         <p><strong>Storage:</strong> Stored in iCloud Key-Value Storage to sync across your Apple devices.</p>
 
         <div class="highlight">
-            <p><strong>Important:</strong> Your task data is NOT synced to iCloud. Only the installation timestamp is synced.</p>
+            <p><strong>Important:</strong> Your task data is automatically synced to your iCloud account when you are signed in to iCloud. This sync is automatic and requires no action from you. If you are not signed in to iCloud, your data remains local only.</p>
         </div>
 
         <h2>3. Data We Do NOT Collect</h2>
@@ -138,16 +138,20 @@
         <p><strong>We do not share your data with anyone.</strong> Your task data never leaves your device except:</p>
         <ul>
             <li>When you explicitly export data using the Export feature</li>
-            <li>Installation timestamp synced via iCloud (Apple's service)</li>
+            <li>When automatically synced to your personal iCloud account (handled by Apple's CloudKit)</li>
+            <li>Installation timestamp synced via iCloud Key-Value Storage (Apple's service)</li>
         </ul>
+        <p><strong>Important:</strong> iCloud sync is between your devices only, using your personal iCloud account. We do not have access to this synced data.</p>
 
         <h2>6. Third-Party Services</h2>
 
         <h3>6.1 Apple Services</h3>
         <ul>
-            <li><strong>iCloud Key-Value Storage:</strong> Syncs installation timestamp only</li>
+            <li><strong>iCloud CloudKit:</strong> Automatically syncs your task data across your devices when you're signed in to iCloud</li>
+            <li><strong>iCloud Key-Value Storage:</strong> Syncs installation timestamp for feature eligibility</li>
             <li><strong>App Store:</strong> Standard distribution and updates</li>
         </ul>
+        <p><strong>Note:</strong> All iCloud sync is handled by Apple's infrastructure. We do not have access to your iCloud data.</p>
 
         <h3>6.2 User Stories</h3>
         <p>The App displays community stories from GitHub Pages/CDN. When you view stories, your device connects to these services. We do not track which stories you view.</p>
@@ -166,8 +170,9 @@
         <h2>8. Data Security</h2>
         <ul>
             <li>Data stored locally using Apple's Core Data framework</li>
-            <li>No data transmitted to external servers</li>
-            <li>You are responsible for device security (passcode, Face ID, etc.)</li>
+            <li>iCloud sync uses Apple's CloudKit with end-to-end encryption</li>
+            <li>No data transmitted to our servers or third-party servers</li>
+            <li>You are responsible for device security (passcode, Face ID, etc.) and iCloud account security</li>
         </ul>
 
         <h2>9. Children's Privacy</h2>
